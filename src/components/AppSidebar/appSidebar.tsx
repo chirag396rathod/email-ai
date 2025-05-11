@@ -32,7 +32,7 @@ export function AppSidebar() {
         </div>
         <SidebarGroup>
           <SidebarGroupLabel className="text-[14px] mt-[42px] font-semibold text-gray-400">
-            Application
+            History
           </SidebarGroupLabel>
           <SidebarGroupContent>
             <SidebarMenu>

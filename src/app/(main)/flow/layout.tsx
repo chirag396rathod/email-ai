@@ -10,7 +10,7 @@ const Layout = ({ children }: { children: React.ReactNode }) => {
     <SidebarProvider>
       <AppSidebar />
       <main className="w-full p-5">
-        <div className="flex justify-between items-center">
+        <div className="flex justify-between items-center mb-4">
           <SidebarTrigger className="hover:text-background cursor-pointer" />
           <Button variant={"outline"} className="cursor-pointer">
             <Plus />

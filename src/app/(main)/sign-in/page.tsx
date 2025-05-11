@@ -11,7 +11,6 @@ const SignIn = () => {
   const { data: session, status } = useSession();
 
   if (status === "authenticated" && session?.accessToken) {
-    console.log("call 1");
     localStorage.setItem("accessToken", session.accessToken ?? "");
     localStorage.setItem("user", JSON.stringify(session.user) ?? "");
     localStorage.setItem("exp", session.expires);
