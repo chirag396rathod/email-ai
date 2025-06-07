@@ -3,6 +3,7 @@ import { Geist, Geist_Mono, Poppins } from "next/font/google";
 import "./globals.css";
 import { SessionProvider } from "next-auth/react";
 import { ThemeProvider } from "next-themes";
+import Script from "next/script";
 
 const poppins = Poppins({
   variable: "--font-poppins",
@@ -22,6 +23,7 @@ export default function RootLayout({
         <ThemeProvider attribute="class" defaultTheme="dark" enableSystem>
           <SessionProvider>{children}</SessionProvider>
         </ThemeProvider>
+        <Script src="https://accounts.google.com/gsi/client" />
       </body>
     </html>
   );

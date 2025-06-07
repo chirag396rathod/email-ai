@@ -1,0 +1,12 @@
+{
+  "extends": "next",
+  "rules": {
+    "react/prop-types": 0,
+    "rules-of-hooks": 0,
+    "no-unused-vars": "off",
+    "react/no-unknown-property": "off",
+    "react/display-name": "off",
+    "react-hooks/exhaustive-deps": "off",
+    "import/no-anonymous-default-export": "off"
+  }
+}

@@ -1,18 +1,21 @@
+"use client";
+import { Button } from "@/components/ui/button";
+import { Plus } from "lucide-react";
+import { redirect } from "next/navigation";
 import React from "react";
-import ConnectGoogleAccounts from "./steps/connectGoogleAccounts";
-import SelectGoogleSheet from "./steps/selectGoogleSheet";
-import GenerateContent from "./steps/GenerateContent";
-import Success from "./steps/success";
 
-const Flow = () => {
+const WelcomePage = () => {
+  const onAddNew = () => {
+    redirect("/flow/add");
+  };
   return (
-    <div className="container max-w-[768px] mx-auto my-0">
-      <ConnectGoogleAccounts />
-      <SelectGoogleSheet />
-      <GenerateContent />
-      <Success />
+    <div className="flex justify-center items-center">
+      <Button onClick={onAddNew} variant={"outline"} className="cursor-pointer">
+        <Plus />
+        <span>Add New</span>
+      </Button>
     </div>
   );
 };
 
-export default Flow;
+export default WelcomePage;
