@@ -8,6 +8,10 @@ Email AI is a comprehensive email automation tool that revolutionizes how you ha
 
 **Perfect for:** Marketing teams, small businesses, content creators, and anyone who needs to send personalized emails at scale.
 
+
+## 📱 Screenshots & Demo
+https://github.com/user-attachments/assets/cb7a74b4-5de9-4ac6-8117-c1a4d2a29a96
+
 ## ✨ Key Features
 
 ### 🔐 **Seamless Authentication**
@@ -110,10 +114,6 @@ GROQ_API_KEY="your_groq_api_key"
 3. **Generate**: Let AI create personalized email content
 4. **Preview**: Review and edit emails before sending
 5. **Send**: Execute bulk email campaigns with progress tracking
-
-
-## 📱 Screenshots & Demo
-https://github.com/user-attachments/assets/cb7a74b4-5de9-4ac6-8117-c1a4d2a29a96
 
 ## 🤝 Contributing
 
