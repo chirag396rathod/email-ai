@@ -111,9 +111,9 @@ GROQ_API_KEY="your_groq_api_key"
 4. **Preview**: Review and edit emails before sending
 5. **Send**: Execute bulk email campaigns with progress tracking
 
-## 📱 Screenshots & Demo
 
-[Add screenshots of your application here]
+## 📱 Screenshots & Demo
+https://github.com/user-attachments/assets/cb7a74b4-5de9-4ac6-8117-c1a4d2a29a96
 
 ## 🤝 Contributing
 
@@ -149,6 +149,6 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 **⭐ If you found this project helpful, please give it a star!**
 
-[🚀 Live Demo](https://your-demo-link.com) • [📖 Documentation](https://your-docs-link.com) • [🐛 Report Bug](https://github.com/chirag396rathod/email-ai/issues) • [💡 Request Feature](https://github.com/chirag396rathod/email-ai/issues)
+[🐛 Report Bug](https://github.com/chirag396rathod/email-ai/issues) • [💡 Request Feature](https://github.com/chirag396rathod/email-ai/issues)
 
 </div>
