@@ -1,36 +1,154 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 📧 Email AI - Intelligent Email Automation Platform
 
-## Getting Started
+> Transform your email workflow with AI-powered automation. Connect Google Sheets, generate intelligent content, and send bulk emails with just a few clicks.
 
-First, run the development server:
+## 🌟 Overview
+
+Email AI is a comprehensive email automation tool that revolutionizes how you handle bulk email campaigns. By combining the power of AI content generation with Google Sheets integration, it eliminates the tedious process of manual email creation and sending.
+
+**Perfect for:** Marketing teams, small businesses, content creators, and anyone who needs to send personalized emails at scale.
+
+## ✨ Key Features
+
+### 🔐 **Seamless Authentication**
+- Google Sign-In integration for secure access
+- OAuth-based authentication with proper session management
+
+### 📊 **Google Sheets Integration**
+- Direct connection to your Google Sheets
+- Real-time data synchronization
+- Flexible data handling for contact lists and templates
+
+### 🧠 **AI-Powered Content Generation**
+- Ultra-fast email content creation using Groq AI
+- Intelligent personalization based on recipient data
+- Context-aware email generation
+
+### ✏️ **Smart Email Management**
+- Real-time email preview before sending
+- Edit and customize AI-generated content
+- Template management system
+
+### 🚀 **Bulk Operations**
+- One-click bulk email sending
+- Progress tracking for large campaigns
+- Error handling and retry mechanisms
+
+### 🎨 **Modern User Interface**
+- Clean, intuitive design with shadcn/ui components
+- Responsive layout for desktop and mobile
+- Beautiful Lucide icons throughout the interface
+
+## 🛠️ Tech Stack
+
+| Category | Technologies |
+|----------|-------------|
+| **Frontend** | Next.js 14, React, TypeScript |
+| **Backend** | Next.js API Routes, Prisma ORM |
+| **Database** | PostgreSQL / SQLite |
+| **AI Integration** | Groq AI API |
+| **Authentication** | NextAuth.js, Google OAuth |
+| **UI Components** | shadcn/ui, Tailwind CSS, Lucide Icons |
+| **External APIs** | Google Sheets API, Gmail API |
+
+## 🚀 Getting Started
+
+### Prerequisites
+- Node.js 18+ 
+- npm or yarn
+- Google Cloud Console project (for OAuth and APIs)
+- Groq AI API key
+
+### Installation
 
 ```bash
+# Clone the repository
+git clone https://github.com/chirag396rathod/email-ai.git
+cd email-ai
+
+# Install dependencies
+npm install
+
+# Set up environment variables
+cp .env.example .env.local
+# Add your API keys and configuration
+
+# Set up database
+npx prisma generate
+npx prisma db push
+
+# Run development server
 npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+Visit `http://localhost:3000` to see the application.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## 📋 Environment Setup
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+Create a `.env.local` file with the following variables:
 
-## Learn More
+```env
+# Database
+DATABASE_URL="your_database_url"
 
-To learn more about Next.js, take a look at the following resources:
+# Google OAuth
+GOOGLE_CLIENT_ID="your_google_client_id"
+GOOGLE_CLIENT_SECRET="your_google_client_secret"
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+# NextAuth
+NEXTAUTH_URL="http://localhost:3000"
+NEXTAUTH_SECRET="your_nextauth_secret"
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+# Groq AI
+GROQ_API_KEY="your_groq_api_key"
+```
 
-## Deploy on Vercel
+## 🎯 How It Works
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Connect**: Sign in with Google and connect your Google Sheets
+2. **Import**: Select your sheet containing contact data
+3. **Generate**: Let AI create personalized email content
+4. **Preview**: Review and edit emails before sending
+5. **Send**: Execute bulk email campaigns with progress tracking
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## 📱 Screenshots & Demo
+
+[Add screenshots of your application here]
+
+## 🤝 Contributing
+
+Contributions are welcome! Please feel free to submit a Pull Request. For major changes, please open an issue first to discuss what you would like to change.
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/AmazingFeature`)
+3. Commit your changes (`git commit -m 'Add some AmazingFeature'`)
+4. Push to the branch (`git push origin feature/AmazingFeature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+
+## 🙋‍♂️ Author
+
+**Chirag Rathod**
+- Portfolio: [imchiragrathod.netlify.app](https://imchiragrathod.netlify.app)
+- LinkedIn: [linkedin.com/in/imchiragrathod](https://linkedin.com/in/imchiragrathod)
+- Email: ahirchirag396@gmail.com
+
+## 🎉 Acknowledgments
+
+- Thanks to Groq AI for lightning-fast AI processing
+- shadcn/ui for the beautiful component library
+- Google for their robust APIs
+- The open-source community for inspiration
+
+---
+
+<div align="center">
+
+**⭐ If you found this project helpful, please give it a star!**
+
+[🚀 Live Demo](https://your-demo-link.com) • [📖 Documentation](https://your-docs-link.com) • [🐛 Report Bug](https://github.com/chirag396rathod/email-ai/issues) • [💡 Request Feature](https://github.com/chirag396rathod/email-ai/issues)
+
+</div>
